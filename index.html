@@ -22,9 +22,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Published Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Other Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publishedprojects">Published Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#otherprojects">Other Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
       </ul>
     </div>
   </nav>
@@ -47,7 +48,7 @@
   <!-- Landing Section End -->
 
   <!-- Published Project Section Start -->
-  <section id="projects" class="bg-primary text-white min-vh-100 mt-5 text-center py-5">
+  <section id="publishedprojects" class="bg-primary text-white min-vh-100 mt-5 text-center py-5">
     <div class="container">
       <h2 class="pt-3">Published Projects</h2>
       <div class="row">
@@ -55,7 +56,14 @@
         <!-- Project 1 -->
         <div class="col-md-4 mb-3">
           <div class="card bg-dark">
-            <img src="C:\Users\geoar\OneDrive\Desktop\Projects\MyWeeklySelf-Analysis.jpg" class="card-img-top" alt="Weekly-Self-Analysis">
+            <!-- <img src="C:\Users\geoar\OneDrive\Desktop\Projects\MyWeeklySelf-Analysis.jpg" class="card-img-top" alt="Weekly-Self-Analysis"> -->
+
+
+            <!-- changes -->
+            <img class="card-img-top" alt="Weekly-Self-Analysis" src="./images/project-1.jpg">
+            <!-- changes -->
+
+            
             <div class="card-body">
               <h5 class="card-title">Weekly-Self-Analysis</h5>
               <p class="card-text">Unlock Your Full Potential, One Week at a Time! Are you ready to take charge of your personal and professional growth? Introducing "My Weekly Self-Analysis Planner," your ultimate tool for self-improvement and achieving your goals. Get your planner now and embark on a journey of growth and achievement!</p>
@@ -89,26 +97,50 @@
     </div>
   </section>
   <!-- Published Project Section End -->
-  <!-- Project Section Start -->
-              <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Other Projects
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul class="text-justify list-unstyled">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">Bootstrap</a></li>
-                    <li><a href="#">Node JS Server</a></li>                 
-                  </ul>
-                </div>
-              </div>
-              </div>
-              <!-- Project Section End -->
+
+   <!-- Other Projects Start -->
+   <section id="otherprojects" class="bg-primary text-white min-vh-100 mt-5 text-center py-5">
+      <h2 class="pt-3">Other Projects</h2>
+      <div class="row text-center flex-row-reverse" id="other-projects">
+        <!-- HTML Card Start -->
+        <div class="col-sm-4" id="html">
+          <img src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg" class="img-fluid overflow-hidden"/>
+          <a href="C:/Users/geoar/OneDrive/Documents/Zuitt-Files/batch328/groupwork2/g1/frontend/s15/discussion/index.html#" class="card-link">Link to Project</a>
+          <h5>HTML</h5>
+          <p>
+            HTML (Hypertext Markup Language) is the standard markup language used for creating web pages. It defines the structure and content of a web page, using elements and tags to specify headings, paragraphs, links, images, and more.
+          </p>
+        </div>
+        <!-- HTML Card End -->
+
+        <!-- Bootstrap Card Start -->
+        <div class="col-sm-4" id="bootstrap">
+          <img
+            src="https://www.10bestdesign.com/blog/content/images/2018/03/14.png"
+            class="img-fluid overflow-hidden"
+          />
+          <h5>Bootstrap</h5>
+          <p>
+            Bootstrap is a popular open-source front-end framework for building responsive and visually appealing web applications. It offers a collection of pre-designed CSS and JavaScript components, making it easy for developers to create mobile-friendly and attractive user interfaces without starting from scratch.
+          </p>
+        </div>
+        <!-- Bootstrap Card End -->
+
+        <!-- Node JS Server Card Start -->
+        <div class="col-sm-4" id="nodejs">
+          <img
+            src="https://www.xendit.co/wp-content/uploads/2020/03/NodeArtboard-1.png"
+            class="img-fluid overflow-hidden"
+          />
+          <h5>Node JS Server</h5>
+          <p>
+            Node.js is a runtime environment that allows developers to run JavaScript on the server side. It's built on Chrome's V8 JavaScript engine and provides a non-blocking, event-driven architecture, making it particularly well-suited for building scalable, real-time applications.
+          </p>
+        </div>
+        <!-- Node JS Server Card End -->
+      </div>
+    </section>
+    <!-- Other Projects End -->
 
   <!-- Contact Section Start -->
   <section id="contact" class="bg-info text-white text-center py-5">
