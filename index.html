@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="index.css"> <!-- Link to external CSS file -->
+  <!-- <link rel="stylesheet" href="https://mail.google.com/"> -->
 
   <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -144,15 +145,15 @@
   <section id="contact" class="bg-info text-white text-center py-5">
     <div class="container">
       <h2>Contact Me</h2>
-      <form action="#">
+      <form action="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" method="post">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Your Name">
+          <input type="text" class="form-control" name="name" placeholder="Your Name" required>
         </div>
         <div class="form-group">
-          <input type="email" class="form-control" placeholder="Your Email">
+          <input type="email" class="form-control" name="email" placeholder="Your Email" required>
         </div>
         <div class="form-group">
-          <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+          <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
         </div>
         <button type="submit" class="btn btn-light">Send</button>
       </form>
