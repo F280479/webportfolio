@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 
-.navbar {
+navbar {
   overflow-x: hidden;
   background-color: #fff;
 }
@@ -38,45 +38,80 @@ body {
   padding: 60px 0;
 }
 
-/* Custom styles for project cards */
+/* Set a fixed height for the card images */
+.card-img-top {
+  height: 400px;
+  object-fit: auto; /* Maintain image aspect ratio while covering the designated height */
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Additional styling for the card containers */
 .card {
-  overflow-x: hidden;
-  background-color: #333;
-  color: #fff;
-  margin: 10px;
+  border: none; /* Remove the card border */
+  border-radius: 10px; /* Add rounded corners */
+  transition: box-shadow 0.3s; /* Add a shadow transition on hover */
 }
 
+/* Style for the card title */
 .card-title {
-  overflow-x: hidden;
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* Adjust the title font size */
+  margin: 10px 0; /* Add some spacing around the title */
 }
 
+/* Style for the card text */
 .card-text {
-  overflow-x: hidden;
+  font-size: 1rem; /* Adjust the text font size */
+  height: 60px;
+}
+
+.card-text-container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.card-text-content {
+  flex-grow: 1;
+}
+
+.card-text-scroll {
+  flex-shrink: 1;
+  max-height: 100px; /* Set the desired max height for the scrollable area */
+  overflow-y: auto;
+  padding-left: 1px; /* Add some spacing for the sidebar */
+  border-left: 2px solid #333; /* Add a border to the sidebar */
+}
+
+.card-text-scroll p {
+  margin: 0;
+}
+
+
+/* Style for the "Learn More" button */
+.btn-primary {
+  background-color: #007bff; /* Change the button background color */
+  border: none; /* Remove the button border */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Change the button background color on hover */
+}
+
+/* Add some margin to the "Learn More" button */
+.btn-primary {
+  margin-top: 10px;
+}
+
+/* Add smooth scrolling to card-text sections */
+.card-text {
   font-size: 1rem;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
-/* Custom styles for contact form */
-.form-group {
-  margin-bottom: 15px;
-}
-
-/* Custom styles for tools section */
-#tools {
-  overflow-x: hidden;
-  background-color: #f9f9f9;
-  color: #fff;
-  padding: 60px 0;
-}
-
-#tools img {
-  overflow-x: hidden;
-  max-width: 150px;
-  margin: 10px;
-}
-
-/* Custom styles for footer */
-footer {
-  background-color: #333;
-  color: #fff;
+/* Add smooth scrolling to the "View" buttons */
+.card-link button {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
 }

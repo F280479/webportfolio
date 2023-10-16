@@ -8,13 +8,12 @@
   <!-- <link rel="stylesheet" href="https://mail.google.com/"> -->
 
   <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 <body>
   <!-- Nav Section Start -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#landing">
       <img src="./images/GA Logo.png" width="33" height="33" class="rounded-circle img-fluid" alt="Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +21,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="./images/George Seguin Arca - Professional Resume.pdf">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="./images/George Seguin Arca - Professional Resume.pdf" target="_blank">About Me</a></li>
         <li class="nav-item"><a class="nav-link" href="#publishedprojects">Published Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="#otherprojects">Other Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -49,34 +48,39 @@
   <!-- Landing Section End -->
 
   <!-- Published Project Section Start -->
-  <section id="publishedprojects" class="bg-primary text-white min-vh-100 mt-5 text-center py-5">
-    <div class="container">
+  <section id="publishedprojects" class="bg-primary text-white min-vh-70 mt-5 text-center py-5">
+    <div class="container justify-content-center">
       <h2 class="pt-3">Published Projects</h2>
       <div class="row">
 
         <!-- Project 1 -->
         <div class="col-md-4 mb-3">
           <div class="card bg-dark">
-
-            <!-- changes -->
             <img class="card-img-top" alt="Weekly-Self-Analysis" src="./images/project-1.jpg">
-            <!-- changes -->
-         
             <div class="card-body">
               <h5 class="card-title">Weekly-Self-Analysis</h5>
-              <p class="card-text">Unlock Your Full Potential, One Week at a Time! Are you ready to take charge of your personal and professional growth? Introducing "My Weekly Self-Analysis Planner," your ultimate tool for self-improvement and achieving your goals. Get your planner now and embark on a journey of growth and achievement!</p>
-              <a href="https://www.amazon.com/Weekly-Self-Analysis-George-Seguin-Arca/dp/B0CGL1LS5G/ref=sr_1_4?crid=GKS4MQFTM5GT&keywords=self+analysis+by+arca&qid=1696690521&sprefix=self+analysis+by+arca%2Caps%2C279&sr=8-4" class="btn btn-primary">Learn More</a>
+                <div class="card-text-scroll">
+                  <p class="card-text">
+                    Unlock Your Full Potential, One Week at a Time! Are you ready to take charge of your personal and professional growth? Introducing "My Weekly Self-Analysis Planner," your ultimate tool for self-improvement and achieving your goals. Get your planner now and embark on a journey of growth and achievement!
+                  </p>
+                </div>     
+                <a href="https://www.amazon.com/Weekly-Self-Analysis-George-Seguin-Arca/dp/B0CGL1LS5G/ref=sr_1_4?crid=GKS4MQFTM5GT&keywords=self+analysis+by+arca&qid=1696690521&sprefix=self+analysis+by+arca%2Caps%2C279&sr=8-4" class="btn btn-primary mb-1" target="_blank">Learn More</a>
             </div>
           </div>
         </div>
+
         <!-- Project 2 -->
         <div class="col-md-4 mb-3">
           <div class="card bg-dark">
             <img class="card-img-top" alt="Weekly Planner" src="./images/project-2.jpg">
             <div class="card-body">
               <h5 class="card-title">Weekly Planner</h5>
-              <p class="card-text">Introducing the Ultimate Weekly Planner! Plan. Achieve. Succeed. Are you ready to take control of your life and make every week count? The Ultimate Weekly Planner is here to help you organize your days, set and smash your goals, and lead a more balanced and fulfilling life..Get yours now!</p>
-              <a href="https://www.amazon.com/Weekly-Planner-George-Seguin-Arca/dp/B0CGR6YFWF/ref=sr_1_6?crid=6DVB3A4XCVNR&keywords=weekly+planner+by+arca&qid=1696690598&sprefix=weekly+planner+by+arca%2Caps%2C276&sr=8-6" class="btn btn-primary">Learn More</a>
+              <div class="card-text-scroll">
+                <p class="card-text">
+                  Introducing the Ultimate Weekly Planner! Plan. Achieve. Succeed. Are you ready to take control of your life and make every week count? The Ultimate Weekly Planner is here to help you organize your days, set and smash your goals.
+                </p>
+              </div>
+              <a href="https://www.amazon.com/Weekly-Planner-George-Seguin-Arca/dp/B0CGR6YFWF/ref=sr_1_6?crid=6DVB3A4XCVNR&keywords=weekly+planner+by+arca&qid=1696690598&sprefix=weekly+planner+by+arca%2Caps%2C276&sr=8-6" class="btn btn-primary mb-1" target="_blank">Learn More</a>           
             </div>
           </div>
         </div>
@@ -86,66 +90,61 @@
             <img class="card-img-top" alt="The 70's Kid" src="./images/project-3.jpg">
             <div class="card-body">
               <h5 class="card-title">The 70's Kid</h5>
-              <p class="card-text">This short, true-to-life story is a vivid tapestry of my own experiences growing up in this unforgettable era. Purchase "The 70's Kid" today to discover the untold story ever!</p>
-              <a href="https://www.amazon.com/70s-Kid-short-True-Story-ebook/dp/B0CHHGKV8L/ref=sr_1_1?crid=1IHZSBY3IIQR7&keywords=george+seguin+arca&qid=1696670187&sprefix=george+seguin+arca%2Caps%2C291&sr=8-1" class="btn btn-primary">Learn More</a>
+              <div class="card-text-scroll">
+                <p class="card-text">
+                  This short, true-to-life story is a vivid tapestry of my own experiences growing up in this unforgettable era. Purchase "The 70's Kid" today to discover the untold story ever!
+                </p>
+              </div>
+              <a href="https://www.amazon.com/70s-Kid-short-True-Story-ebook/dp/B0CHHGKV8L/ref=sr_1_1?crid=1IHZSBY3IIQR7&keywords=george+seguin+arca&qid=1696670187&sprefix=george+seguin+arca%2Caps%2C291&sr=8-1" class="btn btn-primary mb-1" target="_blank">Learn More</a>            
             </div>
+          </div>
+        </div>
+  </section>
+  <!-- Published Project Section End -->
+
+  <!-- Other Projects Start -->
+  <section id="otherprojects" class="bg-primary text-white min-vh-70 mt-5 text-center py-5">
+    <div class="container">
+      <h2 class="pt-3">Other Projects</h2>
+      <div class="row text-center justify-content-center" id="other-projects">
+        <!-- HTML Card Start -->
+        <div class="col-sm-6 col-md-4 mb-3">
+          <div class="card bg-dark">
+            <img src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg" class="img-fluid overflow-hidden"/>
+            <h5 class="card-title">HTML</h5>
+            <div class="card-text-scroll">
+              <p class="card-text">
+                HTML (Hypertext Markup Language) is the standard markup language used for creating web pages. It defines the structure and content of a web page, using elements and tags to specify headings, paragraphs, links, images, and more.
+              </p>
+            </div>
+            <a href="https://f280479.github.io/html-css/" class="btn btn-success">View</a>
+          </div>
+        </div>
+        <!-- HTML Card End -->
+
+        <!-- Bootstrap Card Start -->
+        <div class="col-sm-6 col-md-4 mb-3">
+          <div class="card bg-dark">
+            <img src="https://www.10bestdesign.com/blog/content/images/2018/03/14.png" class="img-fluid overflow-hidden"/>
+            <h5 class="card-title">Bootstrap</h5>
+            <div class="card-text-scroll">
+              <p class="card-text">
+                Bootstrap is a popular open-source front-end framework for building responsive and visually appealing web applications. It offers a collection of pre-designed CSS and JavaScript components, making it easy for developers to create mobile-friendly and attractive user interfaces without starting from scratch.
+              </p>
+            </div>
+            <a href="https://f280479.github.io/bootstrap-components/" class="btn btn-success">View</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Published Project Section End -->
-
-   <!-- Other Projects Start -->
-   <section id="otherprojects" class="bg-primary text-white min-vh-100 mt-5 text-center py-5">
-    <div class="container">
-
-   <!-- <section id="otherprojects" class="bg-primary text-white min-vh-100 mt-5 text-center py-5"> -->
-      <h2 class="pt-3">Other Projects</h2>
-      <div class="row text-center justify-content-center" id="other-projects">
-        <!-- HTML Card Start -->
-        <div class="col-sm-4" id="html">
-          <img src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg" class="img-fluid overflow-hidden"/>    
-          <h5>HTML</h5>
-            <p>HTML (Hypertext Markup Language) is the standard markup language used for creating web pages. It defines the structure and content of a web page, using elements and tags to specify headings, paragraphs, links, images, and more.</p>
-            
-            <a href="https://f280479.github.io/html-css/" class="card-link"><button type="button" class="btn btn-success">View</button></a>
-
-        </div>
-        <!-- HTML Card End -->
-
-        <!-- Bootstrap Card Start -->
-        <div class="col-sm-4" id="bootstrap">
-          <img
-            src="https://www.10bestdesign.com/blog/content/images/2018/03/14.png" class="img-fluid overflow-hidden"/>
-          <h5>Bootstrap</h5>
-            <p>Bootstrap is a popular open-source front-end framework for building responsive and visually appealing web applications. It offers a collection of pre-designed CSS and JavaScript components, making it easy for developers to create mobile-friendly and attractive user interfaces without starting from scratch.</p>
-
-            <a href="https://f280479.github.io/bootstrap-components/" class="card-link"><button type="button" class="btn btn-success">View</button></a>
-        </div>
-        <!-- Bootstrap Card End -->
-
-        <!-- Node JS Server Card Start -->
-       <!--  <div class="col-sm-4" id="nodejs">
-          <img
-            src="https://www.xendit.co/wp-content/uploads/2020/03/NodeArtboard-1.png"
-            class="img-fluid overflow-hidden"
-          />
-          <h5>Node JS Server</h5>
-            <p>Node.js is a runtime environment that allows developers to run JavaScript on the server side. It's built on Chrome's V8 JavaScript engine and provides a non-blocking, event-driven architecture, making it particularly well-suited for building scalable, real-time applications.</p>
-
-            <a href="https://git.zuitt.co/B328/g1/src/branch/master/frontend/s15/discussion" class="card-link"><button type="button" class="btn btn-success">View</button></a>
-        </div> -->
-        <!-- Node JS Server Card End -->
-      </div>
-    </section>
-    <!-- Other Projects End -->
+  <!-- Other Projects End -->
 
   <!-- Contact Section Start -->
   <section id="contact" class="bg-info text-white text-center py-5">
     <div class="container">
       <h2>Contact Me</h2>
-      <form action="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" method="post">
+      <form action="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" method="post" target="_blank">
         <div class="form-group">
           <input type="text" class="form-control" name="name" placeholder="Your Name" required>
         </div>
@@ -192,8 +191,7 @@
   <!-- Footer Section End -->
 
   <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>
