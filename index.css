@@ -64,7 +64,7 @@ navbar {
 /* Style for the card text */
 .card-text {
   font-size: 1rem; /* Adjust the text font size */
-  height: 60px;
+  height: 100px;
 }
 
 .card-text-container {
@@ -114,4 +114,24 @@ navbar {
 /* Add smooth scrolling to the "View" buttons */
 .card-link button {
   scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+#otherprojects .card {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+#otherprojects .card a {
+  margin-top: auto
+}
+
+#publishedprojects .card {
+  min-height: 640px;
+}
+
+@media (max-width: 990px) {
+ .smaller-text {
+  font-size: 17.86px;
+ } 
 }
